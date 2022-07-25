@@ -21,8 +21,8 @@ public class Task3 {
 
         for(int i = 0; i < string.length() / 2; i++){
 
-            firstSum += Character.getNumericValue(string.charAt(i));
-            lastSum += Character.getNumericValue(string.charAt(j));
+            firstSum += string.charAt(i) - '0';
+            lastSum += string.charAt(j) - '0';
             j = j - 1;
         }
 
