@@ -10,7 +10,6 @@ public class Task5 {
         int k;
         int maxLengthOfResult = 1023;
         StringBuilder root = new StringBuilder();
-        String b;
 
 //        System.out.println("Enter a sequence of lower-case english letters of length not exceeding 1000 chars:");
         string = scanner.next();
