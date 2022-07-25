@@ -12,10 +12,10 @@ public class Task1 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a sequence of digits and/or chars without space");
+//        System.out.println("Enter a sequence of digits and/or chars without space");
         string1 = scanner.next();
 
-        System.out.println("Enter a sequence of digits and/or chars without space");
+//        System.out.println("Enter a sequence of digits and/or chars without space");
         string2 = scanner.next();
 
         bulls = bullCount(string1, string2);

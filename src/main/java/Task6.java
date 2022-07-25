@@ -14,7 +14,7 @@ public class Task6 {
         StringBuilder result = new StringBuilder();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a packed line:");
+//        System.out.println("Enter a packed line:");
 
         string = scanner.nextLine();
         stringLength = string.length();
@@ -39,13 +39,13 @@ public class Task6 {
         }
 
         for (int i = 0; i < result.length(); i += outputStringLength) {
-            if(result.length() >= i + outputStringLength) {
-                System.out.println(result.substring(i, i + outputStringLength) + "\n");
+            if(result.length() > i + outputStringLength) {
+                System.out.println(result.substring(i, i + outputStringLength));
             }
-            else{System.out.println(result.substring(i));}
+            else{System.out.println(result.substring(i, result.length()));}
 
         }
-        }}
+    }}
 
 
 //Test1: 3A4B7D --> 	AAABBBBDDDDDDD

@@ -10,22 +10,24 @@ public class Task5 {
         int k;
         int maxLengthOfResult = 1023;
         StringBuilder root = new StringBuilder();
+        String b;
 
-        System.out.println("Enter a sequence of lower-case english letters of length not exceeding 1000 chars:");
+//        System.out.println("Enter a sequence of lower-case english letters of length not exceeding 1000 chars:");
         string = scanner.next();
 
-        System.out.println("Enter a positive or negative integer not equal to zero and of abs value less than 100001:");
+//        System.out.println("Enter a positive or negative integer not equal to zero and of abs value less than 100001:");
         k = scanner.nextInt();
 
         if(k > 0)
         {
-            root = new StringBuilder(powered(string, k));
-            if(root.length() > maxLengthOfResult){
+            if(string.length() * k > maxLengthOfResult){
 
-                for (int i = 0; i < maxLengthOfResult; i++)
-                {
-                    System.out.println(root.charAt(i));
-                }
+                do {
+                    root.append(string);
+                } while (root.length() < maxLengthOfResult);
+
+                System.out.println(root.substring(0, maxLengthOfResult));
+
             }
             else
             {
