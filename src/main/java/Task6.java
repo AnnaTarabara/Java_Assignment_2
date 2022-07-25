@@ -32,7 +32,7 @@ public class Task6 {
                     result.append(character);
                 } else {
 
-                    result.append(String.valueOf(character).repeat(Math.max(0, count)));
+                    result.append(String.valueOf(character).repeat(count));
                     count = 0;
                 }
             }

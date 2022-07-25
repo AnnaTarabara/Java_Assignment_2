@@ -47,7 +47,7 @@ public class Task5 {
     }
     public static String powered(String string, int k){
 
-        return String.valueOf(string).repeat(Math.max(0, k));
+        return String.valueOf(string).repeat(k);
     }
 }
 
