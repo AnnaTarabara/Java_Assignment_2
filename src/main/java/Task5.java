@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Task5 {
@@ -11,10 +10,8 @@ public class Task5 {
         int maxLengthOfResult = 1023;
         StringBuilder root = new StringBuilder();
 
-//        System.out.println("Enter a sequence of lower-case english letters of length not exceeding 1000 chars:");
         string = scanner.next();
 
-//        System.out.println("Enter a positive or negative integer not equal to zero and of abs value less than 100001:");
         k = scanner.nextInt();
 
         if(k > 0)
@@ -30,7 +27,7 @@ public class Task5 {
             }
             else
             {
-                System.out.println(powered(string, k));
+                System.out.println(string.repeat(k));
             }
         }
         else
@@ -39,16 +36,12 @@ public class Task5 {
             for (int i = 0; i < string.length() / k; i++)
             {
                 root.append(string.charAt(i));}
-                if (Objects.equals(powered(String.valueOf(root), k), string))
+                if (String.valueOf(root).repeat(k).equals(string))
                 {
                     System.out.println(root);
                 }
                 else{System.out.println("NO SOLUTION");}
         }
-    }
-    public static String powered(String string, int k){
-
-        return String.valueOf(string).repeat(k);
     }
 }
 

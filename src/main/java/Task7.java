@@ -29,6 +29,11 @@ public class Task7 {
     }
 }
 
+//    public static String powered(String string, int k){
+//
+//        return string.repeat(k);
+//    }
+
 //Test: What a wonderful world! What a wonderful world! she said and sighed, then she became silent for some time. -->
 //a: 2
 //became: 1
