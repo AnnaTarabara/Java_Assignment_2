@@ -7,6 +7,7 @@ public class Task3 {
         int firstSum = 0;
         int lastSum = 0;
         int j;
+        int stringLength;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a ticket number:");
@@ -17,7 +18,9 @@ public class Task3 {
             string = scanner.next();
         }
 
-        j = string.length() - 1;
+        stringLength = string.length();
+
+        j = stringLength - 1;
 
         for(int i = 0; i < string.length() / 2; i++){
 
