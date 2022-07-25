@@ -21,7 +21,7 @@ public class Task1 {
         bulls = bullCount(string1, string2);
         cows = cowCount(string1, string2);
 
-        System.out.println("Number of bulls is " + bulls + " and number of cows is " + cows);
+        System.out.println(bulls + " " + cows);
 
 }
 
