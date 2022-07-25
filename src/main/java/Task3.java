@@ -22,7 +22,7 @@ public class Task3 {
 
         j = stringLength - 1;
 
-        for(int i = 0; i < string.length() / 2; i++){
+        for(int i = 0; i < stringLength / 2; i++){
 
             firstSum += string.charAt(i) - '0';
             lastSum += string.charAt(j) - '0';
