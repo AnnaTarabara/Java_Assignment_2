@@ -32,7 +32,7 @@ public class Task5 {
         }
         else
         {
-            k = Math.abs(k);
+            k = k * (-1);
             for (int i = 0; i < string.length() / k; i++)
             {
                 root.append(string.charAt(i));}
